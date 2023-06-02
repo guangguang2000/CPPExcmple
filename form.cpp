@@ -18,7 +18,7 @@ void Form::exe()
 {
     QString startDay = mConfig["start_day"].toString("20230101");
     QString endDay = mConfig["start_day"].toString("20230201");
-    QString instrument = mConfig["instrument"].toString("IC888");
+    QString instrument = mConfig["instrument"].toString("AUX888");
     auto bars = getData(instrument, startDay, endDay);
     runStrategy(bars);
     mBars = bars;
